@@ -13,11 +13,17 @@ class RingBuffer:
     def get(self):
         # Note:  This is the only [] allowed
         list_buffer_contents = []
+        self.storage = len(list_buffer_contents)
 
-        # TODO: Your code here
+        for i in range(self.storage):
+            print(i)
+            return i
 
-        return list_buffer_contents
 
+a = RingBuffer('a')
+funk = a.get()
+
+print(funk)
 # ----------------Stretch Goal-------------------
 
 
